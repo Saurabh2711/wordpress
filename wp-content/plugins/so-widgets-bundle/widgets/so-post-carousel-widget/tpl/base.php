@@ -17,11 +17,7 @@ $the_query = new WP_Query( $query );
 
 		<a href="#" class="sow-carousel-next" title="<?php esc_attr_e('Next', 'siteorigin-widgets') ?>"></a>
 
-		<div class="sow-carousel-wrapper"
-		     data-query="<?php echo esc_attr($instance['posts']) ?>"
-		     data-found-posts="<?php echo esc_attr($the_query->found_posts) ?>"
-		     data-ajax-url="<?php echo sow_esc_url( wp_nonce_url( admin_url('admin-ajax.php'), 'widgets_action', '_widgets_nonce' ) ) ?>"
-			>
+		<div class="sow-carousel-wrapper" data-query="<?php echo esc_attr($instance['posts']) ?>"  data-found-posts="<?php echo esc_attr($the_query->found_posts) ?>" data-ajax-url="<?php echo sow_esc_url( wp_nonce_url( admin_url('admin-ajax.php'), 'widgets_action', '_widgets_nonce' ) ) ?>" >
 			<ul class="sow-carousel-items">
 				<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 					<li class="sow-carousel-item">
