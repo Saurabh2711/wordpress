@@ -1,0 +1,910 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>WordPress PDF Light Viewer Plugin Documentation</title>
+
+	<link rel="stylesheet" href="css/pure.css" />
+	<link rel="stylesheet" href="css/prism.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div id="layout">
+		<!-- Menu toggle -->
+		<a href="#menu" id="menuLink" class="menu-link">
+			<!-- Hamburger icon -->
+			<span></span>
+		</a>
+	
+		<div id="menu">
+			<div class="pure-menu pure-menu-open">
+				<a class="logo" href="http://linked-articles.demo.teamlead.pw/">
+					<span>PDF Light Viewer</span>
+					<span>Documentation</span>
+				</a>
+	
+				<ul>
+					<li><a href="#main">
+						<span class="title">About & Features</span>
+						<span class="question">What did you get?</span>
+					</a></li>
+					<li><a href="#install">
+						<span class="title">Installation & Contents</span>
+						<span class="question">How to install?</span>
+					</a></li>
+					<li><a href="#quick">
+						<span class="title">Quick start guide</span>
+						<span class="question">How to hit the ground running?</span>
+					</a></li>
+					<li><a href="#setup">
+						<span class="title">Set Up</span>
+						<span class="question">Where to start?</span>
+					</a></li>
+					<li><a href="#use">
+						<span class="title">Usage</span>
+						<span class="question">How to use?</span>
+					</a></li>
+					<li><a href="#advanced">
+						<span class="title">Advanced usage</span>
+						<span class="question">Are you developer?</span>
+					</a></li>
+					<li><a href="#support">
+						<span class="title">Support</span>
+						<span class="question">Need support?</span>
+					</a></li>
+					<li><a href="#credits">
+						<span class="title">Credits</span>
+						<span class="question">Sources used</span>
+					</a></li>
+					<li><a href="#changelog">
+						<span class="title">Changelog</span>
+						<span class="question"></span>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	
+	
+	
+	
+	
+		<div id="main" class="doc-section">
+			<div class="header">
+				<div class="logo-header"></div>
+				<h1>WordPress PDF Light Viewer Plugin Documentation</h1>
+				<h2>What did you get?</h2>
+			</div>
+	
+			<div class="content">
+				<h4 class="content-subhead">About</h4>
+				<p>
+					Thank you for usign the WordPress PDF Light Viewer Plugin.
+				</p>
+				<p>This plugin gives you an ability to embed PDF files to your Wordpress sites.</p>
+				<p>You could add unlimited amount of PDF of any size without performance issues.</p>
+				<p>Added PDF could be embedded as flipbooks on frontend.</p>
+				
+				<h4 class="content-subhead">Features</h4>
+				<ul>
+					<li>Unlimited PDF files.</li>
+					<li>Unlimited PDF file size without site performance issues.</li>
+					<li>Turn.js flipbook integrated.</li>
+					<li>Dashboard flipbook preview.</li>
+					<li>Slider thumbnails navigation integrated.</li>
+					<li>Lazy loading pages integrated.</li>
+					<li>s2member compatible.</li>
+					<li>Developer-friendly.</li>
+					<li>Well-documented.</li>
+					<li>Fully translatable to any language using .po files.</li>
+				</ul>
+				
+				<h4 class="content-subhead">What next?</h4>
+				<p>Check <a href="#install">Installation</a> section to know how to install the plugin.</p>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div id="install" class="doc-section">
+			<div class="header">
+				<h1>Installation</h1>
+				<h2>How to install?</h2>
+			</div>
+	
+			<div class="content">
+				<h4 class="content-subhead">Installation steps</h4>
+	
+				<h4>Regular installation</h4>
+				<ol>
+					<li><s>Get the package</s> Ok, you got the plugin package :)</li>
+					<li>Upload plugin package with WordPress <code>http://yoursite.com/wp-admin/plugin-install.php?tab=upload</code> or WordPress Multisite <code>http://yoursite.com/wp-admin/network/plugin-install.php?tab=upload</code></li>
+					<li>Activate <code>WordPress PDF Light Viewer Plugin</code> on the WordPress Plugins page <code>http://yoursite.com/wp-admin/plugins.php</code></li>
+					<li>That's all! You can start from <a href="#quick">Quick start guide</a></li>
+					<li>After plugin activation please go to plugin's settings on the page <code>http://yoursite.com/wp-admin/options-general.php?page=pdf-light-viewer</code> to <a href="#setup">Set Up</a> the plugin.</li>
+				</ol>
+				
+				<h4>cPanel installation</h4>
+				<ol>
+					<li>Upload plugin package through the cPanel File Manager to the <code>/wp-content/plugins/</code></li>
+					<li>Extract plugin package contents to the <code>/wp-content/plugins/</code> folder</li>
+					<li>Activate <code>WordPress PDF Light Viewer Plugin</code> on the WordPress Plugins page <code>http://yoursite.com/wp-admin/plugins.php</code></li>
+					<li>That's all! You can start from <a href="#quick">Quick start guide</a></li>
+					<li>After plugin activation please go to plugin's settings on the page <code>http://yoursite.com/wp-admin/options-general.php?page=pdf-light-viewer</code> to <a href="#setup">Set Up</a> the plugin.</li>
+				</ol>
+				
+				<h4>FTP installation</h4>
+				<ol>
+					<li>Unpack the plugin package with any archiving tool, which supports <a href="http://en.wikipedia.org/wiki/Zip_%28file_format%29" target="_blank">ZIP file format</a></li>
+					<li>Upload files folder to the <code>/wp-content/plugins/</code> to the server with any FTP client application, for example <a href="https://filezilla-project.org/" target="_blank">FileZilla</a></li>
+					<li>Activate <code>WordPress PDF Light Viewer Plugin</code> on the WordPress Plugins page <code>http://yoursite.com/wp-admin/plugins.php</code></li>
+					<li>That's all! You can start from <a href="#quick">Quick start guide</a></li>
+					<li>After plugin activation please go to plugin's settings on the page <code>http://yoursite.com/wp-admin/options-general.php?page=pdf-light-viewer</code> to <a href="#setup">Set Up</a> the plugin.</li>
+				</ol>
+				
+				<blockquote>
+					More about WordPress <a href="http://codex.wordpress.org/Managing_Plugins" target="_blank">Plugins Management</a>
+				</blockquote>
+				
+				<h4 class="content-subhead">Plugin file structure</h4>
+				<pre>
+├── assets
+│   ├── bower_components
+│   │   ├── bxslider-4
+│   │   │   ├── bower.json
+│   │   │   ├── images
+│   │   │   │   ├── bx_loader.gif
+│   │   │   │   └── controls.png
+│   │   │   ├── jquery.bxslider.css
+│   │   │   ├── jquery.bxslider.js
+│   │   │   ├── jquery.bxslider.min.js
+│   │   │   └── plugins
+│   │   │       ├── jquery.easing.1.3.js
+│   │   │       └── jquery.fitvids.js
+│   │   ├── fontawesome
+│   │   │   ├── bower.json
+│   │   │   ├── css
+│   │   │   │   ├── font-awesome.css
+│   │   │   │   └── font-awesome.min.css
+│   │   │   ├── fonts
+│   │   │   │   ├── FontAwesome.otf
+│   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   └── fontawesome-webfont.woff
+│   │   │   ├── less
+│   │   │   │   ├── bordered-pulled.less
+│   │   │   │   ├── core.less
+│   │   │   │   ├── extras.less
+│   │   │   │   ├── fixed-width.less
+│   │   │   │   ├── font-awesome.less
+│   │   │   │   ├── icons.less
+│   │   │   │   ├── larger.less
+│   │   │   │   ├── list.less
+│   │   │   │   ├── mixins.less
+│   │   │   │   ├── path.less
+│   │   │   │   ├── rotated-flipped.less
+│   │   │   │   ├── spinning.less
+│   │   │   │   ├── stacked.less
+│   │   │   │   └── variables.less
+│   │   │   └── scss
+│   │   │       ├── _bordered-pulled.scss
+│   │   │       ├── _core.scss
+│   │   │       ├── _extras.scss
+│   │   │       ├── _fixed-width.scss
+│   │   │       ├── font-awesome.scss
+│   │   │       ├── _icons.scss
+│   │   │       ├── _larger.scss
+│   │   │       ├── _list.scss
+│   │   │       ├── _mixins.scss
+│   │   │       ├── _path.scss
+│   │   │       ├── _rotated-flipped.scss
+│   │   │       ├── _spinning.scss
+│   │   │       ├── _stacked.scss
+│   │   │       └── _variables.scss
+│   │   ├── jquery
+│   │   │   ├── bower.json
+│   │   │   ├── dist
+│   │   │   │   ├── jquery.js
+│   │   │   │   ├── jquery.min.js
+│   │   │   │   └── jquery.min.map
+│   │   │   ├── MIT-LICENSE.txt
+│   │   │   └── src
+│   │   │       ├── ajax
+│   │   │       │   ├── jsonp.js
+│   │   │       │   ├── load.js
+│   │   │       │   ├── parseJSON.js
+│   │   │       │   ├── parseXML.js
+│   │   │       │   ├── script.js
+│   │   │       │   ├── var
+│   │   │       │   │   ├── nonce.js
+│   │   │       │   │   └── rquery.js
+│   │   │       │   └── xhr.js
+│   │   │       ├── ajax.js
+│   │   │       ├── attributes
+│   │   │       │   ├── attr.js
+│   │   │       │   ├── classes.js
+│   │   │       │   ├── prop.js
+│   │   │       │   ├── support.js
+│   │   │       │   └── val.js
+│   │   │       ├── attributes.js
+│   │   │       ├── callbacks.js
+│   │   │       ├── core
+│   │   │       │   ├── access.js
+│   │   │       │   ├── init.js
+│   │   │       │   ├── parseHTML.js
+│   │   │       │   ├── ready.js
+│   │   │       │   └── var
+│   │   │       │       └── rsingleTag.js
+│   │   │       ├── core.js
+│   │   │       ├── css
+│   │   │       │   ├── addGetHookIf.js
+│   │   │       │   ├── curCSS.js
+│   │   │       │   ├── defaultDisplay.js
+│   │   │       │   ├── hiddenVisibleSelectors.js
+│   │   │       │   ├── support.js
+│   │   │       │   ├── swap.js
+│   │   │       │   └── var
+│   │   │       │       ├── cssExpand.js
+│   │   │       │       ├── getStyles.js
+│   │   │       │       ├── isHidden.js
+│   │   │       │       ├── rmargin.js
+│   │   │       │       └── rnumnonpx.js
+│   │   │       ├── css.js
+│   │   │       ├── data
+│   │   │       │   ├── accepts.js
+│   │   │       │   ├── Data.js
+│   │   │       │   └── var
+│   │   │       │       ├── data_priv.js
+│   │   │       │       └── data_user.js
+│   │   │       ├── data.js
+│   │   │       ├── deferred.js
+│   │   │       ├── deprecated.js
+│   │   │       ├── dimensions.js
+│   │   │       ├── effects
+│   │   │       │   ├── animatedSelector.js
+│   │   │       │   └── Tween.js
+│   │   │       ├── effects.js
+│   │   │       ├── event
+│   │   │       │   ├── alias.js
+│   │   │       │   └── support.js
+│   │   │       ├── event.js
+│   │   │       ├── exports
+│   │   │       │   ├── amd.js
+│   │   │       │   └── global.js
+│   │   │       ├── intro.js
+│   │   │       ├── jquery.js
+│   │   │       ├── manipulation
+│   │   │       │   ├── _evalUrl.js
+│   │   │       │   ├── support.js
+│   │   │       │   └── var
+│   │   │       │       └── rcheckableType.js
+│   │   │       ├── manipulation.js
+│   │   │       ├── offset.js
+│   │   │       ├── outro.js
+│   │   │       ├── queue
+│   │   │       │   └── delay.js
+│   │   │       ├── queue.js
+│   │   │       ├── selector.js
+│   │   │       ├── selector-native.js
+│   │   │       ├── selector-sizzle.js
+│   │   │       ├── serialize.js
+│   │   │       ├── sizzle
+│   │   │       │   └── dist
+│   │   │       │       ├── sizzle.js
+│   │   │       │       ├── sizzle.min.js
+│   │   │       │       └── sizzle.min.map
+│   │   │       ├── traversing
+│   │   │       │   ├── findFilter.js
+│   │   │       │   └── var
+│   │   │       │       └── rneedsContext.js
+│   │   │       ├── traversing.js
+│   │   │       ├── var
+│   │   │       │   ├── arr.js
+│   │   │       │   ├── class2type.js
+│   │   │       │   ├── concat.js
+│   │   │       │   ├── hasOwn.js
+│   │   │       │   ├── indexOf.js
+│   │   │       │   ├── pnum.js
+│   │   │       │   ├── push.js
+│   │   │       │   ├── rnotwhite.js
+│   │   │       │   ├── slice.js
+│   │   │       │   ├── strundefined.js
+│   │   │       │   ├── support.js
+│   │   │       │   └── toString.js
+│   │   │       └── wrap.js
+│   │   ├── jquery.lazyload
+│   │   │   ├── bower.json
+│   │   │   ├── img
+│   │   │   │   ├── bmw_m1_hood.jpg
+│   │   │   │   ├── bmw_m1_side.jpg
+│   │   │   │   ├── bmw_m3_gt.jpg
+│   │   │   │   ├── corvette_pitstop.jpg
+│   │   │   │   ├── grey.gif
+│   │   │   │   ├── transparent.gif
+│   │   │   │   ├── viper_1.jpg
+│   │   │   │   ├── viper_corner.jpg
+│   │   │   │   └── white.gif
+│   │   │   ├── jquery.lazyload.js
+│   │   │   ├── jquery.lazyload.min.js
+│   │   │   ├── jquery.scrollstop.js
+│   │   │   └── jquery.scrollstop.min.js
+│   │   ├── jquery-zoom
+│   │   │   ├── bower.json
+│   │   │   ├── daisy.jpg
+│   │   │   ├── demo.html
+│   │   │   ├── grabbed.cur
+│   │   │   ├── grab.cur
+│   │   │   ├── icon.png
+│   │   │   ├── jquery.zoom.js
+│   │   │   ├── jquery.zoom.min.js
+│   │   │   ├── readme.md
+│   │   │   ├── roxy.jpg
+│   │   │   └── zoom.jquery.json
+│   │   ├── kayahr-jquery-fullscreen-plugin
+│   │   │   ├── build.xml
+│   │   │   ├── demo
+│   │   │   │   ├── iframe.html
+│   │   │   │   └── index.html
+│   │   │   ├── externs
+│   │   │   │   ├── jquery.fullscreen.js
+│   │   │   │   └── jquery.js
+│   │   │   ├── fullscreen.jquery.json
+│   │   │   ├── jquery.fullscreen.js
+│   │   │   ├── jquery.fullscreen-min.js
+│   │   │   ├── lib
+│   │   │   │   └── compiler.jar
+│   │   │   ├── LICENSE.txt
+│   │   │   └── README.md
+│   │   └── pure
+│   │       ├── base-context.css
+│   │       ├── base-context-min.css
+│   │       ├── base.css
+│   │       ├── base-min.css
+│   │       ├── bower.json
+│   │       ├── buttons-core.css
+│   │       ├── buttons-core-min.css
+│   │       ├── buttons.css
+│   │       ├── buttons-min.css
+│   │       ├── forms.css
+│   │       ├── forms-min.css
+│   │       ├── forms-nr.css
+│   │       ├── forms-nr-min.css
+│   │       ├── grids-core.css
+│   │       ├── grids-core-min.css
+│   │       ├── grids.css
+│   │       ├── grids-min.css
+│   │       ├── grids-responsive.css
+│   │       ├── grids-responsive-min.css
+│   │       ├── grids-responsive-old-ie.css
+│   │       ├── grids-responsive-old-ie-min.css
+│   │       ├── grids-units.css
+│   │       ├── grids-units-min.css
+│   │       ├── HISTORY.md
+│   │       ├── LICENSE.md
+│   │       ├── menus-core.css
+│   │       ├── menus-core-min.css
+│   │       ├── menus.css
+│   │       ├── menus-min.css
+│   │       ├── menus-nr.css
+│   │       ├── menus-nr-min.css
+│   │       ├── menus-paginator.css
+│   │       ├── menus-paginator-min.css
+│   │       ├── pure.css
+│   │       ├── pure-min.css
+│   │       ├── pure-nr.css
+│   │       ├── pure-nr-min.css
+│   │       ├── README.md
+│   │       ├── tables.css
+│   │       └── tables-min.css
+│   ├── bower.json
+│   ├── css
+│   │   ├── admin.css
+│   │   ├── frontend.css
+│   │   └── magazine.css
+│   ├── img
+│   │   ├── arrows.png
+│   │   ├── binding_light_@2X.png
+│   │   ├── binding_light.png
+│   │   ├── fabric_of_squares_gray_@2X.png
+│   │   ├── fabric_of_squares_gray.png
+│   │   ├── lightpaperfibers.png
+│   │   ├── loader.gif
+│   │   ├── logo100.png
+│   │   ├── logo.png
+│   │   ├── pdf.png
+│   │   ├── zoom-icons-editable.png
+│   │   ├── zoom-icons.png
+│   │   └── zoom.png
+│   └── js
+│       ├── admin.js
+│       ├── frontend.js
+│       ├── magazine.js
+│       └── turn.js
+│           ├── hash.js
+│           ├── scissor.min.js
+│           ├── turn.html4.min.js
+│           ├── turn.min.js
+│           ├── zoom.js
+│           └── zoom.min.js
+├── composer.json
+├── composer.lock
+├── controllers
+│   ├── AdminController.php
+│   ├── AssetsController.php
+│   ├── FrontController.php
+│   ├── PdfController.php
+│   └── Plugin.php
+├── documentation
+│   ├── css
+│   │   ├── prism.css
+│   │   ├── pure.css
+│   │   └── style.css
+│   ├── img
+│   │   ├── fabric_of_squares_gray_@2X.png
+│   │   ├── fabric_of_squares_gray.png
+│   │   ├── logo100.png
+│   │   ├── logo.png
+│   │   └── screenshots
+│   │       ├── activation-error-notification.jpeg
+│   │       ├── activation-notifications.jpeg
+│   │       ├── importing-pdf.jpeg
+│   │       ├── import-progress.jpeg
+│   │       ├── import-scheduled.jpeg
+│   │       ├── pdf-files-in-menu.jpeg
+│   │       ├── pdf-list-page.jpeg
+│   │       ├── pdf-preview.jpeg
+│   │       └── settings-requirements-are-not-met.jpeg
+│   ├── index.html
+│   └── js
+│       ├── jquery.js
+│       ├── jquery-scrollspy.js
+│       ├── prism.js
+│       └── scripts.js
+├── languages
+│   ├── en_US
+│   │   ├── pdf-light-viewer-en_US.mo
+│   │   └── pdf-light-viewer-en_US.po
+│   └── ru_RU
+│       ├── pdf-light-viewer-ru_RU.mo
+│       └── pdf-light-viewer-ru_RU.po
+├── libraries
+│   └── directory_helper.php
+├── LICENSE
+├── models
+│   └── Model.php
+├── pdf-light-viewer.php
+├── templates
+│   └── shortcode-pdf-light-viewer.php
+├── vendor
+│   ├── autoload.php
+│   ├── composer
+│   │   ├── autoload_classmap.php
+│   │   ├── autoload_namespaces.php
+│   │   ├── autoload_psr4.php
+│   │   ├── autoload_real.php
+│   │   ├── ClassLoader.php
+│   │   └── installed.json
+│   └── WebDevStudios
+│       └── Custom-Metaboxes-and-Fields-for-WordPress
+│           ├── CONTRIBUTING.md
+│           ├── example-functions.php
+│           ├── Gruntfile.js
+│           ├── helpers
+│           │   ├── cmb_Meta_Box_ajax.php
+│           │   ├── cmb_Meta_Box_field.php
+│           │   ├── cmb_Meta_Box_Sanitize.php
+│           │   ├── cmb_Meta_Box_Show_Filters.php
+│           │   └── cmb_Meta_Box_types.php
+│           ├── images
+│           │   ├── ico-delete.png
+│           │   ├── ui-bg_flat_0_aaaaaa_40x100.png
+│           │   ├── ui-bg_flat_75_ffffff_40x100.png
+│           │   ├── ui-bg_glass_55_fbf9ee_1x400.png
+│           │   ├── ui-bg_glass_65_ffffff_1x400.png
+│           │   ├── ui-bg_glass_75_dadada_1x400.png
+│           │   ├── ui-bg_glass_75_e6e6e6_1x400.png
+│           │   ├── ui-bg_glass_95_fef1ec_1x400.png
+│           │   ├── ui-bg_highlight-soft_75_cccccc_1x100.png
+│           │   ├── ui-icons_222222_256x240.png
+│           │   ├── ui-icons_2e83ff_256x240.png
+│           │   ├── ui-icons_454545_256x240.png
+│           │   ├── ui-icons_888888_256x240.png
+│           │   └── ui-icons_cd0a0a_256x240.png
+│           ├── init.php
+│           ├── js
+│           │   ├── cmb.js
+│           │   ├── cmb.min.js
+│           │   ├── jquery.datePicker.min.js
+│           │   └── jquery.timePicker.min.js
+│           ├── package.json
+│           ├── phpunit.xml
+│           ├── readme.md
+│           ├── style.css
+│           ├── style.min.css
+│           └── tests
+│               ├── bin
+│               │   └── install-wp-tests.sh
+│               ├── phpunit
+│               │   ├── includes
+│               │   │   └── bootstrap.php
+│               │   └── tests
+│               │       └── CMB_Core_Test.php
+│               └── README.md
+└── views
+    └── settings.php
+				</pre>
+				
+				<h4 class="content-subhead">What next?</h4>
+				<p>Check <a href="#quick">Quick start guide</a> section to see quick examples of plugin's usage.</p>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="quick" class="doc-section">
+			<div class="header">
+				<h1>Quick start guide</h1>
+				<h2>How to hit the ground running?</h2>
+			</div>
+	
+			<div class="content">
+				
+				<p>First of all you need to check plugin requirements.</p>
+				
+				<h4 class="content-subhead">Requirements</h4>
+				
+				<ul>
+					<li>PHP is 5.2 or higher</li>
+					<li>Imagick support</li>
+					<li>Writable upload folder <code>wp-content/uploads/pdf-light-viewer</code></li>
+				</ul>
+				
+				<p>After activation plugin will create new post type for PDF files. You'll see pointer notification near it's menu item.</p>
+				<p><img src="img/screenshots/activation-notifications.jpeg" alt="Activation notifications" /></p>
+				
+				<p>Also right after activation, plugin will check requirements and will notify you about checking results. If requirements are met, notification will show up and disappear.</p>
+				<p>But if some requirements are not met, you'll see constant error notification. Follow the link in the notification to see details on the settings page.</p>
+				<p><img src="img/screenshots/activation-error-notification.jpeg" alt="Error notification" /></p>
+				
+				<p>You can find WordPress PDF Light Viewer Plugin settings page by following url address like this one <code>http://yoursite.com/wp-admin/options-general.php?page=pdf-light-viewer</code></p>
+				<p>If some requirement is not met, you will see it on settings page:</p>
+				<p><img src="img/screenshots/settings-requirements-are-not-met.jpeg" alt="Requirements are not met" /></p>
+				
+				<h4 class="content-subhead">If Imagick is not supported</h4>
+				
+				<blockquote>
+					<p>The Imagick library is required for PDF Light Viewer plugin to work. Not supported in current context means that the Imagick library is not installed or turned off on the server. To make plugin work you will need to install it or to turn it on.</p>
+					<p><a href="http://en.wikipedia.org/wiki/ImageMagick" target="_blank">Imagick</a> is the image manipulation library for PHP. Imagick is a server software thus it cannot be installed through the Wordpress interface or Wordpress plugins system unfortunately.</p>
+					<p>To make it work, someone, you, your server administrator or your hosting provider, should install (or enable, if it's already installed) this software on your server. If your site is maintained by some administrator, he or she already knows how to install ImageMagick and Imagick libraries. Otherwise the installation could be done through cPanel in some cases and you could try to install it.</p>
+					<p>Sometimes your hosting provider could restrict installation of additional software. In this case you can contact them for further instructions and details.</p>
+				</blockquote>
+				
+				<h4 class="content-subhead">What next?</h4>
+				<p>Check <a href="#setup">Set Up</a> section to know more about plugin global settings.</p>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div id="setup" class="doc-section">
+			<div class="header">
+				<h1>Set up</h1>
+				<h2>Where to start?</h2>
+			</div>
+	
+			<div class="content">
+				<p>
+					You can find WordPress PDF Light Viewer Plugin settings, requirements and documentation on the page <code>http://yoursite.com/wp-admin/options-general.php?page=pdf-light-viewer</code>
+				</p>
+				<p>In settings you can hide the new PDF post type from the admin menu. This is useful, when you uploaded PDF files not often and do not want to unnecessary item to take the space of the screen.</p>
+				<p><img src="img/screenshots/settings.jpeg" alt="Settings" /></p>
+				<p>You can turn it on again at any moment.</p>
+				
+				<h4 class="content-subhead">What next?</h4>
+				<p>Check <a href="#use">Usage</a> section to know more about use cases.</p>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<div id="use" class="doc-section">
+			<div class="header">
+				<h1>Usage</h1>
+				<h2>How to use?</h2>
+			</div>
+	
+			<div class="content">
+				<div class="content-subhead">The process of publishing PDF files is the following:</div>
+					<ol>
+						<li>User uploads PDF document</li>
+						<li>PDF document is parsed by the plugin</li>
+						<li>User stays on the site until the document is parsed</li>
+						<li>User adds the wordpress shortcode, produced by the plugin, to the page or post</li>
+					</ol>
+				
+				<div class="content-subhead">Importing PDF file</div>
+		
+					<p>You can go to PDFs menu item to see the list of imported PDF files.</p>
+					<p><img src="img/screenshots/pdf-files-in-menu.jpeg" alt="PDF Files in menu" /></p>
+						
+					<p>If you just installed the plugin the list will be empty. Go ahead and import first PDF document by clicking <code>Import PDF</code> button.</p>
+					<p>Importing of PDF is similar to the creating regular WordPress post or page but there are some differences.</p>
+					<p><img src="img/screenshots/importing-pdf.jpeg" alt="Importing PDF" /></p>		
+					
+					<p>You can specify the title for the PDF. It's for internal use only, it wouldn't be shown on the site automatically.</p>
+					<p>You're available to change some importing options such as:</p>
+					<ul>
+						<li>
+							JPEG compression quality
+						</li>
+						<li>
+							JPEG resolution
+						</li>
+					</ul>
+					<p>Changing these options will affect importing process.</p>
+					<p>To import PDF file choose the file from the Media Library and check the checkbox <code>Enable import</code></p>
+					
+					<p>Click <code>Publish</code> to start the 	import.</p>
+					
+					<p><img src="img/screenshots/import-scheduled.jpeg" alt="Import scheduled" /></p>		
+				
+					<p>We moved the import process to the background, so you could continue to do other things on the site if needed.</p>
+					<p>The import process doesn't use the WP Cron functionality. It's triggered by browser's background (AJAX) call. We could not rely on WP Cron functionality because some servers (we faced that problem with Hostgator) doesn't allow loopback requests.</p>
+					<p>The import process will work from any admin interface page.</p>
+					<p>It will work until you leave the admin interface and will continue when you come back.</p>
+					
+					<blockquote>
+						<p>Anyway, please note, that import of large PDF files (50 pages and more) will take some time.</p>
+					</blockquote>
+					
+					<blockquote>
+						<p>Also, please note, that import of large PDF files will take some server resources (memory usage, CPU time, etc.). Usage of these resources depends on PDF file size, number of pages, initial PDF resolution, etc.</p>
+						<p>That's why we separated the import process by pages.</p>
+						<p>Please, use carefully.</p>
+					</blockquote>
+					
+					<p>The importing time depends on the server. Anyway, you can check import progress in notification at the top of the page, or on the PDF list page.</p>
+					<p><img src="img/screenshots/import-progress.jpeg" alt="PDF List Page" /></p>
+					
+					<p>After import, the first page will be set as featured image of the PDF file post.</p>
+					
+				<div class="content-subhead">Re-importing PDF file</div>
+				
+					<p>To re-import PDF file, choose the new file from the Media Library and check the checkbox <code>Enable import</code></p>
+					
+					<p>Click <code>Update</code> to start the import.</p>
+					
+					<blockquote>
+						<p>Please note, that all previously imported pages of this document will be deleted from the disk. This operation cannot be undone.</p>
+					</blockquote>
+				
+				<div class="content-subhead">Updating PDF file</div>
+				
+					<p>If you just need to change the name of the PDF file, you leave the option <code>Enable import</code> unchecked. Without checking this checkbox import wouldn't be triggered.</p>
+					
+				<div class="content-subhead">Deleting PDF file</div>
+				
+					<p>If you will permanently delete PDF file post, all previews will be also deleted.</p>
+					<blockquote>
+						<p>Please note, that this operation cannot be undone.</p>
+					</blockquote>
+				
+				<div class="content-subhead">Changing permissions</div>
+				
+					<p>In the <code>Permissions</code> section you can add limits for different user roles for this file.</p>
+					<p>If you'll choose <code>Anonymous</code> user role and set limit to 3, then on the Front of the site anonymous users will see only first 3 pages of the PDF file.</p>
+				
+				<div class="content-subhead">Preview</div>
+				
+					<p>After importing file you could preview your file exactly how it will be shown with help of shortcode on the frontend.</p>
+					<p><img src="img/screenshots/pdf-preview.jpeg" alt="PDF List Page" /></p>
+				
+				<div class="content-subhead">Shortcodes</div>
+					<p>
+						After importing you can add PDF files with shortcodes anywhere in your post or page. You can copy shortcodes from PDFs list page or compose them manually.
+					</p>
+					<p><img src="img/screenshots/pdf-list-page.jpeg" alt="PDF List Page" /></p>
+				
+				<div class="content-subhead">Visual Composer</div>
+					<p>
+						In case when you're using Visual Composer plugin, the better approach would be to map PDF Light Viewer shortcode.
+					</p>
+					<p><img src="img/screenshots/visual-composer-shortcode-map.jpeg" alt="Map Shortcode" /></p>
+					
+					<p>
+						After mapping you can go to the page, when you want to have your PDF document and insert it there like shown below:
+					</p>
+					<p><img src="img/screenshots/visual-composer-shortcode-select.jpeg" alt="Shortcode Select" /></p>
+					<p><img src="img/screenshots/visual-composer-set-up-shortcode.jpeg" alt="Shortcode Set Up" /></p>
+				
+				<h4 class="content-subhead">What next?</h4>
+				<p>Check <a href="#advanced">Advanced Usage</a> section to get full control on the plugin functionality and look and feel.</p>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div id="advanced" class="doc-section">
+			<div class="header">
+				<h1>Advanced Usage</h1>
+				<h2>Are you developer?</h2>
+			</div>
+	
+			<div class="content">
+				<p>
+					So you're developer.
+					We take care about you, no matter, whether you get our plugin from the client
+					or bought it for your purposes. You don't need to change anything inside the plugin (at least we hope so).
+				</p>
+
+				<p>
+					You will have full control on the plugin right from other plugin,
+					or theme, or whatever you use in your wordpress.
+				</p>
+				
+				<div class="content-subhead">Code control</div>
+				<p>
+					You can override any of plugins classes somewhere before the <code>after_setup_theme</code> action:
+				</p>
+				<ul>
+					<li>
+						<code>PdfLightViewer_Plugin</code> - some main functions
+					</li>
+					<li>
+						<code>PdfLightViewer_AssetsController</code> - css and js assets including
+					</li>
+					<li>
+						<code>PdfLightViewer_AdminController</code> - admin functions
+					</li>
+					<li>
+						<code>PdfLightViewer_FrontController</code> - frontend functions
+					</li>
+					<li>
+						<code>PdfLightViewer_PdfController</code> - custom PDF post type and related functions
+					</li>
+				</ul>
+				
+				<div class="content-subhead">Templates control</div>
+				
+				<p>
+					You can create <code>shortcode-pdf-light-viewer.php</code> in your theme
+					or copy it from <code>templates</code> folder to your theme folder
+					to override all default plugin template for frontend.
+				</p>
+				
+				<div class="content-subhead">Plugin Output</div>
+				<p>
+					Shortcode <code>[pdf-light-viewer]</code>
+					as well as <code>PdfLightViewer_FrontController::disaply_pdf_book($atts = array())</code>
+					has following parameters:</p>
+				</p>
+				<ul>
+					<li>
+						<code>id</code> (required), this is ID of the PDF post, you can
+					</li>
+					<li>
+						<code>template</code> (optional), you can specify template name to override default. Template name can be any, that accepted by <a href="http://codex.wordpress.org/Function_Reference/get_template_part" target="_blank">get_template_part()</a> function.
+					</li>
+				</ul>
+				
+				<p>
+					You could call class method <code>PdfLightViewer_FrontController::disaply_pdf_book($atts = array())</code>
+					directly instead of using shortcode <code>[pdf-light-viewer]</code>.
+				</p>
+								
+				<h4 class="content-subhead">What next?</h4>
+				<p>Check <a href="#support">Support</a> section to get in touch with our support team.</p>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div id="support" class="doc-section">
+			<div class="header">
+				<h1>Support</h1>
+				<h2>Need support?</h2>
+			</div>
+	
+			<div class="content">
+				<p>Once again, thank you so much for getting our plugin. We would be glad to help you in any questions related to this plugin.</p>
+				<p>
+					We want to make your plugin usage as much easier as we could.
+				</p>
+				<p>If you want, you can contact us, you can do it by email: <a href="mailto:support@teamlead.pw">support@teamlead.pw</a> or through the support forum at http://support.wp.teamlead.pw (coming soon)</p>
+				<p>This plugin is free and we will appreciate any donations from you - <a href="http://pdf-light-viewer.wp.teamlead.pw/">Donate us</a>.</p>
+				<p>Also please find us on CodeCanyon: <a href="http://codecanyon.net/user/antongorodezkiy/portfolio">http://codecanyon.net/user/antongorodezkiy/portfolio</a></p>
+			</div>
+		</div>
+		
+		
+		<div id="credits" class="doc-section">
+			<div class="header">
+				<h1>Credits</h1>
+				<h2>Sources used</h2>
+			</div>
+	
+			<div class="content">
+				<blockquote>
+					<ul>
+						<li>
+							Icons &copy; <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome&nbsp;<span class="fa fa-external-link-square"></span></a>
+						</li>
+						<li>
+							Logo Icons &copy; <a href="https://www.iconfinder.com/Re66y" target="_blank">Gregor Cresnar&nbsp;<span class="fa fa-external-link-square"></span></a>
+						</li>
+						<li>
+							CSS Framework &copy; <a href="http://purecss.io/" target="_blank">Pure.css&nbsp;<span class="fa fa-external-link-square"></span></a>
+						</li>
+						<li>
+							Flipbook &copy; <a href="http://www.turnjs.com/" target="_blank">Turn.js&nbsp;<span class="fa fa-external-link-square"></span></a>
+						</li>
+						<li>
+							Lazy Load &copy; <a href="http://www.appelsiini.net/projects/lazyload" target="_blank">Lazy Load Plugin for jQuery&nbsp;<span class="fa fa-external-link-square"></span></a>
+						</li>
+						<li>
+							Slider &copy; <a href="http://bxslider.com/" target="_blank">bxSlider&nbsp;<span class="fa fa-external-link-square"></span></a>
+						</li>
+						<li>
+							Fullscreen &copy; <a href="https://github.com/kayahr/jquery-fullscreen-plugin/" target="_blank">jQuery Fullscreen Plugin&nbsp;<span class="fa fa-external-link-square"></span></a>
+						</li>
+					</ul>
+				</blockquote>
+			</div>
+		</div>
+		
+		
+		<div id="changelog" class="doc-section">
+			<div class="header">
+				<h1>Changelog</h1>
+			</div>
+	
+			<div class="content">
+				
+				<h4 class="content-subhead">Version 1.0</h4>
+				
+				<ul>
+					<li>The plugin released</li>
+				</ul>
+				
+			</div>
+		</div>
+		
+		
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<script type="text/javascript" src="js/jquery-scrollspy.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
