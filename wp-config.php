@@ -23,7 +23,7 @@ define('DB_USER', 'root');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'abcd123');
-
+define('ALLOW_UNFILTERED_UPLOADS', true);
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 
